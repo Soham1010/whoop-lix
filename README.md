@@ -1,18 +1,102 @@
-# React + Vite
+# 🎬 whoop-lix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple, delightful movie discovery and search app built with **React**, **Vite**, and **Tailwind CSS**. Search thousands of movies using The Movie Database (TMDB) API — quick, responsive, and easy to run locally. 🚀
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🔎 Search movies by title with debounce to reduce API calls
+- 🎯 Discover popular movies (default view)
+- ⏳ Loading spinner while fetching data
+- 🖼️ Movie cards show poster, rating, language, and release year
+- ⚡ Fast dev experience with Vite and React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧰 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# whoop-lix
-# whoop-lix
+- React 19
+- Vite
+- Tailwind CSS
+- The Movie Database (TMDB) API
+- Appwrite (installed dependency — optional backend integration)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- A TMDB API read access token (Bearer token)
+
+### Setup
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Create environment file and add your TMDB API key (use a read access token as the app expects a Bearer token):
+
+```bash
+# .env
+VITE_TMDB_API_KEY=your_tmdb_bearer_token_here
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Build for production:
+
+```bash
+npm run build
+```
+
+5. Preview production build locally:
+
+```bash
+npm run preview
+```
+
+---
+
+## ⚙️ Configuration
+
+- The app reads the TMDB token from `import.meta.env.VITE_TMDB_API_KEY`.
+- If you'd like to integrate a backend or user authentication, Appwrite is already included as a dependency.
+
+---
+
+## 📸 Usage
+
+- Type in the search input to look for movies (results update after a short debounce).
+- The app falls back to a popular/discover list when the search field is empty.
+- Each movie card shows title, rating, original language, and release year.
+
+---
+
+## ✅ Contributing
+
+Contributions, issues, and feature requests are welcome! Please open an issue or submit a pull request.
+
+---
+
+## 📝 Notes
+
+- Keep your TMDB token secret — do not commit `.env` to version control.
+- This project is a lightweight demo and may include development TODOs.
+
+---
+
+## 📄 License
+
+MIT (or choose a license you prefer)
+
+
+Enjoy exploring movies! 🍿
