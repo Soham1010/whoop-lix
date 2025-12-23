@@ -33,7 +33,7 @@ export const App = () => {
   }, [searchTerm]);
 
   // Create a state to display errors
-  const [errorMessage, setErrorMessage] = useState('');
+  const [err~orMessage, setErrorMessage] = useState('');
 
   const fetchMovies = async (query = '') => {
 
