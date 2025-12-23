@@ -94,9 +94,4 @@ Contributions, issues, and feature requests are welcome! Please open an issue or
 
 ---
 
-## 📄 License
-
-MIT (or choose a license you prefer)
-
-
 Enjoy exploring movies! 🍿
